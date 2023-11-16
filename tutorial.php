@@ -23,6 +23,8 @@
     <?php include "menu.php"; ?>
 
     <div class="container-fluid">
+            
+        </div>
         <div class="row">
             <?php include "sidebar.php" ?>
         </div>
