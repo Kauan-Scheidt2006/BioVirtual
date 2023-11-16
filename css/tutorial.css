@@ -6,10 +6,31 @@ img{
     border-radius: 05%;
 }
 
-h4{
-    margin-top: 10%;
+h3{
+    margin-top: 05%;
+    margin-bottom: 05%;
 }
 
-h5{
+img{
     margin-bottom: 20%;
+}
+
+#rv{
+    margin-top: 60%;
+}
+
+.ms-3{
+    color:white;
+}
+
+#navbar-example3{
+    padding-top: 10%;
+    border-radius: 3%;
+}
+.centro{
+    text-align: center;
+}
+body{
+    background-color: rgb(195, 202, 209);
+    margin-bottom: 10%;
 }
