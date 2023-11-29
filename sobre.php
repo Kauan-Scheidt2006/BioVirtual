@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-    crossorigin="anonymous">
-
-    <link rel="shortcut icon" href="favicon_io/favicon-96x96.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="shortcut icon" href="img/logoBioVirtual.png" type="image/x-icon">
     <link rel="stylesheet" href="css/sobre.css">
-    <title>BioVirtual</title>
+    <title>Bio Virtual</title>
 </head>
+
 <body>
-    <?php include "menu.php";
-         include "projeto.php" ?>
+    <?php include "menu.php" ?>
 
     <div class="container">
-        
-    <h1 id="marca">BioVirtual em ambiente imersivo/semi-imersivo</h1>
-        <div class="row">
-            <div class="col-4">
-                <img src="imagens/logo.png" alt="Logo da BioVirtual" width="100%">
-            </div>
-            <div class="col-7">
-                <img src="imagens/cena.png" alt="Cena do CoSpaces" width="80%">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h1 style="color:#3A8E06;" id="titulo"><b>BioVirtual em ambiente imersivo/semi-imersivo</b></h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 convite">
-                <h4>
-                        É um prazer recebê-lo como novo estudante em nosso projeto! Estamos animados por você ter escolhido embarcar nesta jornada educacional conosco, aqui você terá a oportunidade de expandir até seus conhecimentos, desenvolver habilidades e criar memórias duradouras. Nós sabemos que estudar dá muito trabalho!
-                    Então venha aprender com esta ferramenta prática complementar ao lecionamento acadêmico.
+        <div class="row text-center mt-5">
+            <div class="col-12"><img src="img/cena.png" alt="" width="50%"></div>
+        </div>
 
-                </h4>
+        <div class="row mt-5">
+            <div class="col-12 text-center" id="texto">
+                <h4>É um prazer recebê-lo como novo estudante em nosso projeto! Estamos animados por você ter escolhido embarcar nesta jornada educacional conosco, aqui você terá a oportunidade de expandir até seus conhecimentos, desenvolver habilidades e criar memórias duradouras. Nós sabemos que estudar dá muito trabalho!
+                    Então venha aprender com esta ferramenta prática complementar ao lecionamento acadêmico.</h4>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-7">
-                <h2 id="pergunta">Como foi Desenvolver o Projeto???</h2>
+                <h2 id="texto" style="color: #3A8E06;"><b>Como foi Desenvolver o Projeto??? </b></h2>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row mt-3">
             <div class="col-12 introducao">
-                <?php introducao()?>         
+                <?php include "projeto.php";
+                introducao() ?>
             </div>
-            <div class="row saida">
+            <div class="row saida mt-5">
                 <div class="col-6">
-                    <h4>Com Muita Dedicação e Carinho </h4>
-                    <h3 class="nomes">Nicole Rezena e Kauan Scheidt</h3>
+                    <h4 id="texto"><b>Com Muita Dedicação e Carinho</b> </h4>
+                    <h3 id="nomes">Nicole Rezena e Kauan Scheidt</h3>
                 </div>
             </div>
+
+            <h5 id="nomes">
+                <div class="row mt-3" >
+                    <div class="col-3">
+                        <b> Orientador (a):</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3"> Juliano Tonizetti Brignoli
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3"> <b>Coorientadores(as):</b>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Aliane Loureiro Krassmann</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mb-5">
+                    Marja Zattoni Milano
+                    </div>
+                </div>
+            </h5>
         </div>
+
     </div>
 </body>
+
 </html>

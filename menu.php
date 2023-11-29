@@ -1,28 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<nav class="navbar navbar-expand bg-secondary">
-  <div class="container-fluid">
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="row navbar-nav">
-        <div class="col-4">
-            <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.php">Home</a>
-            </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand" style="background-color: #E4FAFF;">
+    <div class="container-fluid">
+
+      <img src="img/logoBioVirtual.png" alt="Logo BioVirtual" width="130">
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <div class="home">
+            <a href="index.php" class="nav-link">HOME</a>
+          </div>
+          <div class="sobre">
+            <a href="sobre.php" class="nav-link">SOBRE</a>
+          </div>
+          <div class=" tutorial">
+            <a href="tutorial.php" class="nav-link">TUTORIAL</a>
+          </div>
+
         </div>
 
-        <div class="col-4">
-            <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="tutorial.php">Tutorial</a>
-            </li>
-        </div>
-
-        <div class="col-4">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="sobre.php">Sobre</a>
-            </li>
-        
-        </div>
-      </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</body>
+
+</html>

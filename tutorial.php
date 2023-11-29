@@ -15,8 +15,7 @@
 
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/tutorial.css">
-
-    <link rel="shortcut icon" href="favicon_io/favicon-96x96.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logoBioVirtual.png" type="image/x-icon">
     <title>BioVirtual</title>
 </head>
 <body>
