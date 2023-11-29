@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-.nav-item{
-    border-left: 20%;
-}
-
-.navbar{
-    margin-bottom: 07%;
+.home, .sobre, .tutorial{
+    padding-left: 30%;
 }

@@ -1,36 +1,17 @@
-@charset "UTF-8";
+@charset "UTF_8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-img{
-    border: black solid;
-    border-radius: 05%;
+#titulo{
+    font-family: "Roboto Condensed";
 }
 
-h3{
-    margin-top: 05%;
-    margin-bottom: 05%;
+#texto{
+    font-family: "Work Sans";
 }
 
-img{
-    margin-bottom: 20%;
-}
-
-#rv{
-    margin-top: 60%;
-}
-
-.ms-3{
-    color:white;
-}
-
-#navbar-example3{
-    padding-top: 10%;
-    border-radius: 3%;
-}
-.centro{
-    text-align: center;
-}
-body{
-    background-color: rgb(195, 202, 209);
-    margin-bottom: 10%;
+#nomes{
+    font-family: "Oswald";
 }
