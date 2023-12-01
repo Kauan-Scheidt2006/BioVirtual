@@ -2,6 +2,7 @@
 session_start();
 $GLOBALS['conn'] = new mysqli('localhost', 'root', "", 'Biovirtual');
 
+    
 
 function create($apelido, $nome, $senha){
     $sql = "INSERT INTO usuario (apelido, nome, senha) VALUES ('$apelido', '$nome', '$senha')";
@@ -11,6 +12,7 @@ function create($apelido, $nome, $senha){
     $usuario = ["apelido"=>$apelido, "nome"=>$nome, "senha"=>$senha];
 
     $_SESSION['logado'] = $usuario;
+    header('Location: index.php');
 }
 
 function valida($apelido, $senha){
@@ -20,14 +22,11 @@ function valida($apelido, $senha){
 
     $usuario = mysqli_fetch_array($resul);
 
-    if(empty($usuario)){
-        header('Location: index.php');
-        exit;
-    }
-    else
+    if(isset($usuario))
         $_SESSION['logado'] = $usuario;
-        header('Location: index.php');
         
+    header('Location: index.php');
+    exit;    
 
 }
 

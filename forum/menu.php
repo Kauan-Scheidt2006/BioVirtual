@@ -1,15 +1,14 @@
 <?php
-include "func.php";
-
-        if(empty($_SESSION['logado'])){
-            session_destroy();
-            header('Location: login.php');
-        }
+    if(isset($_GET['logout'])){      
+        logout();}
+        
         ?>
 
 <a href="index.php">Principal</a> <br>
 <a href="atualiza.php">Alteração de Dados</a> <br>
 <a href="perfil.php">Perfil Pessoal</a> <br>
+<a href="?logout">Logout</a>
+
 
 <br><br><br>
 

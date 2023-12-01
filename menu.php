@@ -28,6 +28,7 @@
           <div class=" tutorial">
             <a href="tutorial.php" class="nav-link">TUTORIAL</a>
           </div>
+          <a href="forum/index.php" class="nav-link">Fórum</a>
 
         </div>
 

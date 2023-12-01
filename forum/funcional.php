@@ -2,7 +2,7 @@
 
 include "func.php";
 
-if(empty($_POST['acao'])){
+if(empty($_POST['acao']) ){
     header('Location: index.php');
     exit;
 }

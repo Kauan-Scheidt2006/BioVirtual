@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <?php
-include "func.php";
+include "auxiliar.php";
 
 ?>
     <meta charset="UTF-8">

@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    ?>
     <form action="funcional.php" method="post">
         <input type="text" name="apelido" id="apelido" required>
 
