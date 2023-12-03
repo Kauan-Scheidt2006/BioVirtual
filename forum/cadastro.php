@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        session_start();
+        if(isset($_SESSION['erro']['insert']))
+            echo $_SESSION['erro']['insert'];
+    ?>
     <form action="funcional.php" method="post" onsubmit="return valida()">
         <input type="text" name="nome" id="nome" placeholder="Nome" required>
         <br><br>

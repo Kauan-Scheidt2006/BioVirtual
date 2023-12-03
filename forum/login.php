@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        session_start();
+        
+        if(isset($_SESSION['erro']['logar'])) 
+            echo $_SESSION['erro']['logar'];
+    ?>
     <form action="funcional.php" method="post">
         <input type="text" name="apelido" id="apelido" required>
 
