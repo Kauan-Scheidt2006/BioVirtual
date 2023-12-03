@@ -37,5 +37,7 @@ function createMensagem($titulo, $descricao, $data, $canal_id, $usuario_id){
 
     $GLOBALS['conn']->query($sql);
 
+    
+    $_SESSION['operacoes'][] = "Mensagem Cadastrada Com Sucesso";
     header("Location: index.php");
 }

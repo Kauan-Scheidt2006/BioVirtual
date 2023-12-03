@@ -4,6 +4,8 @@
 
 $GLOBALS['conn'] = new mysqli('localhost', 'root', "", 'Biovirtual');
 session_start();
+unset($_SESSION['erro']['logar']);
+unset($_SESSION['erro']['insert']);
 
 function logout(){
     session_destroy();
