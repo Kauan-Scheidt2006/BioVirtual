@@ -16,9 +16,9 @@
     
         if(isset($_POST['selecionado']))
             $_SESSION['selecionado'] = $_POST['selecionado'];
-
+    
         elseif(empty($_SESSION['selecionado']))
-            $_SESSION['selecionado'] = 1;
+            $_SESSION['selecionado'] =     $_SESSION['selecionado'] = mysqli_fetch_assoc($GLOBALS['conn']->query("SELECT id FROM canal LIMIT 1"))['id'];
        
 
         $consultaCanais = "SELECT * FROM canal";
@@ -36,7 +36,7 @@
         <div class="col">
             <form action="funcCanal.php" method="post">
                 <input type="hidden" name="idCanal" value="<?= $_SESSION['selecionado'] ?>" required>
-                <input type="submit" value="Alterar Informação de Canal" class="btn btn-warning">
+                <input type="submit" value="Alterar Informação de Canal" class="btn btn-secondary">
             </form>
         </div>
         <div class="col">

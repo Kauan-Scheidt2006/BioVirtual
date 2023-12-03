@@ -15,17 +15,16 @@ function create($apelido, $nome, $senha){
         exit;
     }
     else{
-    $sql = "INSERT INTO usuario (apelido, nome, senha) VALUES ('$apelido', '$nome', '$senha')";
+    $data = date("d-m-Y");
+    $sql = "INSERT INTO usuario (apelido, nome, senha, criado_em) VALUES ('$apelido', '$nome', '$senha', '$data')";
 
     $GLOBALS['conn']->query($sql);
-
-    $usuario = ["apelido"=>$apelido, "nome"=>$nome, "senha"=>$senha];
-
-    $_SESSION['logado'] = $usuario;
 
     
     $_SESSION['operacoes'][] = "Usuário Cadastrado Com Sucesso";
     header('Location: index.php');}
+
+    valida($apelido, $senha);
 }
 
 function valida($apelido, $senha){
@@ -50,7 +49,8 @@ function valida($apelido, $senha){
 
 
 function update($id, $apelido, $nome, $senha){
-    $sql = "UPDATE usuario SET apelido = '$apelido', nome = '$nome', senha = '$senha'
+    $data = date('d-m-Y');
+    $sql = "UPDATE usuario SET apelido = '$apelido', nome = '$nome', senha = '$senha', atualizado_em = '$data'
      WHERE usuario.id = $id ";
 
      $GLOBALS['conn']->query($sql);
