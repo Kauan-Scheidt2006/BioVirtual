@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand" style="background-color: #E4FAFF;">
     <div class="container-fluid">
 
-      <img src="img/logoBioVirtual.png" alt="Logo BioVirtual" width="130">
+      <img src="img/logoBioVirtual.png" alt="Logo BioVirtual">
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">

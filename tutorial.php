@@ -13,7 +13,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/tutorial.css">
     <link rel="shortcut icon" href="img/logoBioVirtual.png" type="image/x-icon">
     <title>BioVirtual</title>
