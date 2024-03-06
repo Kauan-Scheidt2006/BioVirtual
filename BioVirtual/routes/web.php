@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CanalController;
 use App\Http\Controllers\UsuarioController;
-
+use App\Http\Middleware\Admin;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,10 +32,20 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix("BioVirtual")->middleware('auth')->group(function (){
     Route::get('/', [CanalController::class, 'index'])->name('biovirtual.index');
-    Route::post('/', [CanalController::class, 'mensagemCad'])->name('mensagemCad');
+    Route::post('/', [CanalController::class, 'index'])->name('biovirtual.index');
+    
+    Route::post('/mensagemCad', [CanalController::class, 'mensagemCad'])->name('mensagemCad');
+    Route::post('/noticiaCad', [CanalController::class, 'noticiaCad'])->name('noticiaCad');
+
     Route::get('/Usuario/{id?}', [CanalController::class, 'usuarioDetalhes'])->name('usuario.detalhes');
     Route::get('/listarUsuario', [UsuarioController::class, 'listarUsuarios'])->name('listar.usuarios');
+
     Route::post('admin', [UsuarioController::class, "adminCad"])->name('adminCad');
+
+    Route::get("/canal", [CanalController::class, "canalCreate"])->middleware(Admin::class)->name('canal.create');    
+    
+    Route::post("/canal", [CanalController::class, "canalStore"])->middleware(Admin::class)->name('canal.store');
+
 });
 
 require __DIR__.'/auth.php';
